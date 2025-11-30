@@ -2,8 +2,8 @@
 cask "ecos" do
   name "ecos"
   desc "ecos CLI orchestrates cloud FinOps projects (AWS, Azure, GCP): setup, resource bootstrap, dbt-powered data transformation, and automation from the terminal."
-  homepage "https://github.com/ecos-labs/ecos-core"
-  version "0.6.0"
+  homepage "https://github.com/ecos-labs/ecos"
+  version "0.1.0"
 
   livecheck do
     skip "Auto-generated on release."
@@ -13,33 +13,33 @@ cask "ecos" do
 
   on_macos do
     on_intel do
-      url "https://github.com/ecos-labs/ecos-core/releases/download/v#{version}/ecos-darwin-amd64.tar.gz",
-        verified: "github.com/ecos-labs/ecos-core"
-      sha256 "3116f2074fd2e9be36d510325b9dc7df0bbcb94ddd35720749dac75b2cb50c1f"
+      url "https://github.com/ecos-labs/ecos/releases/download/v#{version}/ecos-darwin-amd64.tar.gz",
+        verified: "github.com/ecos-labs/ecos"
+      sha256 "f4ba3600905a700ae9080712ef8306b680feb8925feec5def53e5de49628f46c"
     end
     on_arm do
-      url "https://github.com/ecos-labs/ecos-core/releases/download/v#{version}/ecos-darwin-arm64.tar.gz",
-        verified: "github.com/ecos-labs/ecos-core"
-      sha256 "858e464d9cf8ea0026fb05ebe1a472bcd1c5a65be1801947b59841849b3f0a52"
+      url "https://github.com/ecos-labs/ecos/releases/download/v#{version}/ecos-darwin-arm64.tar.gz",
+        verified: "github.com/ecos-labs/ecos"
+      sha256 "51cd154376e3d0c562b77987434850b292d04ac8fc4d599b49cbe54cd74d1314"
     end
   end
 
   on_linux do
     on_intel do
-      url "https://github.com/ecos-labs/ecos-core/releases/download/v#{version}/ecos-darwin-amd64.tar.gz",
-        verified: "github.com/ecos-labs/ecos-core"
-      sha256 "7f1d034f48cd9465d1fa396876f50e151b3d23485cec8b72ad699aed7570c56c"
+      url "https://github.com/ecos-labs/ecos/releases/download/v#{version}/ecos-darwin-amd64.tar.gz",
+        verified: "github.com/ecos-labs/ecos"
+      sha256 "7865f203467cbb410222d4f660cbb12b7aa626b53e911b147cb26f73fdf40099"
     end
     on_arm do
-      url "https://github.com/ecos-labs/ecos-core/releases/download/v#{version}/ecos-darwin-arm64.tar.gz",
-        verified: "github.com/ecos-labs/ecos-core"
-      sha256 "f58190a8c2d7bdfe2588ff9cb0b8a20f32e26e6734776935d24bcf7e81e6f258"
+      url "https://github.com/ecos-labs/ecos/releases/download/v#{version}/ecos-darwin-arm64.tar.gz",
+        verified: "github.com/ecos-labs/ecos"
+      sha256 "46d8afe7f078dc21809bf3571f52fea7addbbf6fd9d272305c4ef27879debddd"
     end
   end
 
   caveats do
-    "Requires Python 3.8+ for dbt features and the relevant cloud CLI for AWS/Azure/GCP automations."
-    "On macOS, if you encounter the quarantine warning, run:"
+    "Requires Python 3.8+ for dbt features."
+    "On macOS, if you encounter a quarantine warning, run:"
     "  xattr -dr com.apple.quarantine /usr/local/bin/ecos"
   end
 

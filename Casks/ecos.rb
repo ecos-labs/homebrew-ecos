@@ -3,7 +3,7 @@ cask "ecos" do
   name "ecos"
   desc "ecos CLI orchestrates cloud FinOps projects (AWS, Azure, GCP): setup, resource bootstrap, dbt-powered data transformation, and automation from the terminal."
   homepage "https://github.com/ecos-labs/ecos"
-  version "0.1.0"
+  version "0.2.0"
 
   livecheck do
     skip "Auto-generated on release."
@@ -15,12 +15,12 @@ cask "ecos" do
     on_intel do
       url "https://github.com/ecos-labs/ecos/releases/download/v#{version}/ecos-darwin-amd64.tar.gz",
         verified: "github.com/ecos-labs/ecos"
-      sha256 "0ca489bcc28b1ddd14a3d1bd22e624a20dc2bbd665ebf90f8445a22280fe1965"
+      sha256 "0d2df3f72a225e25d833aec8d0cf43b76ac7b48684f69e628cabdfa3cc31fdba"
     end
     on_arm do
       url "https://github.com/ecos-labs/ecos/releases/download/v#{version}/ecos-darwin-arm64.tar.gz",
         verified: "github.com/ecos-labs/ecos"
-      sha256 "053c84e28c7a6798699688b86082c0a4e2a8433c94d79a787f0667d669d16f63"
+      sha256 "5014f0579148d11c942f4621054fa4cff7413f5a67dc4155f68adee728d84fea"
     end
   end
 
@@ -28,12 +28,12 @@ cask "ecos" do
     on_intel do
       url "https://github.com/ecos-labs/ecos/releases/download/v#{version}/ecos-darwin-amd64.tar.gz",
         verified: "github.com/ecos-labs/ecos"
-      sha256 "9562196223d618cfac7baa41090f4a06311759974a5010042eb5efe98ac8130e"
+      sha256 "3dc14be1acf2967afabc763bca56fe08237295ec8cf1045aaffa3e1efbdfa94a"
     end
     on_arm do
       url "https://github.com/ecos-labs/ecos/releases/download/v#{version}/ecos-darwin-arm64.tar.gz",
         verified: "github.com/ecos-labs/ecos"
-      sha256 "c5db9480351cfa9b9140f7d097153448f2ccbaa93764e7ae513a8bc7507d5d8a"
+      sha256 "9914c2596c4e5d4847e0ad203d69fc539f358f66527cf877a05770834aaed20b"
     end
   end
 

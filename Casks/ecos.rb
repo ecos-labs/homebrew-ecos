@@ -15,12 +15,12 @@ cask "ecos" do
     on_intel do
       url "https://github.com/ecos-labs/ecos/releases/download/v#{version}/ecos-darwin-amd64.tar.gz",
         verified: "github.com/ecos-labs/ecos"
-      sha256 "0d2df3f72a225e25d833aec8d0cf43b76ac7b48684f69e628cabdfa3cc31fdba"
+      sha256 "58114c740b89454d7b4586ea0e90b21575d69226e6452a1adc19dd17b4170d32"
     end
     on_arm do
       url "https://github.com/ecos-labs/ecos/releases/download/v#{version}/ecos-darwin-arm64.tar.gz",
         verified: "github.com/ecos-labs/ecos"
-      sha256 "5014f0579148d11c942f4621054fa4cff7413f5a67dc4155f68adee728d84fea"
+      sha256 "9db6fabc32a645db5530be19501646aad83fec47d93c92e82706f1bed36d8783"
     end
   end
 
@@ -28,12 +28,12 @@ cask "ecos" do
     on_intel do
       url "https://github.com/ecos-labs/ecos/releases/download/v#{version}/ecos-darwin-amd64.tar.gz",
         verified: "github.com/ecos-labs/ecos"
-      sha256 "3dc14be1acf2967afabc763bca56fe08237295ec8cf1045aaffa3e1efbdfa94a"
+      sha256 "8ffbf19cde1740488afd6949f67426cc8dc39b98badba253eeb0b0a0b29cb47b"
     end
     on_arm do
       url "https://github.com/ecos-labs/ecos/releases/download/v#{version}/ecos-darwin-arm64.tar.gz",
         verified: "github.com/ecos-labs/ecos"
-      sha256 "9914c2596c4e5d4847e0ad203d69fc539f358f66527cf877a05770834aaed20b"
+      sha256 "69b1e7dfa5dca6da429cb97f2abc25aac8c70560771b33379d90063be8fcd85a"
     end
   end
 

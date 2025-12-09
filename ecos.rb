@@ -5,21 +5,21 @@
 class Ecos < Formula
   desc "ecos CLI orchestrates cloud FinOps workflows: project setup, resource provisioning, dbt workflow automation."
   homepage "https://github.com/ecos-labs/ecos"
-  version "0.1.0"
+  version "0.2.0"
   license "Apache-2.0"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/ecos-labs/ecos/releases/download/v0.1.0/ecos-darwin-amd64.tar.gz"
-      sha256 "0ca489bcc28b1ddd14a3d1bd22e624a20dc2bbd665ebf90f8445a22280fe1965"
+      url "https://github.com/ecos-labs/ecos/releases/download/v0.2.0/ecos-darwin-amd64.tar.gz"
+      sha256 "0d2df3f72a225e25d833aec8d0cf43b76ac7b48684f69e628cabdfa3cc31fdba"
 
       def install
         bin.install "ecos"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/ecos-labs/ecos/releases/download/v0.1.0/ecos-darwin-arm64.tar.gz"
-      sha256 "053c84e28c7a6798699688b86082c0a4e2a8433c94d79a787f0667d669d16f63"
+      url "https://github.com/ecos-labs/ecos/releases/download/v0.2.0/ecos-darwin-arm64.tar.gz"
+      sha256 "5014f0579148d11c942f4621054fa4cff7413f5a67dc4155f68adee728d84fea"
 
       def install
         bin.install "ecos"
@@ -29,15 +29,15 @@ class Ecos < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/ecos-labs/ecos/releases/download/v0.1.0/ecos-linux-amd64.tar.gz"
-      sha256 "9562196223d618cfac7baa41090f4a06311759974a5010042eb5efe98ac8130e"
+      url "https://github.com/ecos-labs/ecos/releases/download/v0.2.0/ecos-linux-amd64.tar.gz"
+      sha256 "3dc14be1acf2967afabc763bca56fe08237295ec8cf1045aaffa3e1efbdfa94a"
       def install
         bin.install "ecos"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/ecos-labs/ecos/releases/download/v0.1.0/ecos-linux-arm64.tar.gz"
-      sha256 "c5db9480351cfa9b9140f7d097153448f2ccbaa93764e7ae513a8bc7507d5d8a"
+      url "https://github.com/ecos-labs/ecos/releases/download/v0.2.0/ecos-linux-arm64.tar.gz"
+      sha256 "9914c2596c4e5d4847e0ad203d69fc539f358f66527cf877a05770834aaed20b"
       def install
         bin.install "ecos"
       end

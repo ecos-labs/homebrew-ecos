@@ -11,7 +11,7 @@ class Ecos < Formula
   on_macos do
     if Hardware::CPU.intel?
       url "https://github.com/ecos-labs/ecos/releases/download/v0.2.0/ecos-darwin-amd64.tar.gz"
-      sha256 "58114c740b89454d7b4586ea0e90b21575d69226e6452a1adc19dd17b4170d32"
+      sha256 "11305380044bfef229d3cb71a18ddd8a2db6cf1c7f1dee7c42f67645ded576fc"
 
       def install
         bin.install "ecos"
@@ -19,7 +19,7 @@ class Ecos < Formula
     end
     if Hardware::CPU.arm?
       url "https://github.com/ecos-labs/ecos/releases/download/v0.2.0/ecos-darwin-arm64.tar.gz"
-      sha256 "9db6fabc32a645db5530be19501646aad83fec47d93c92e82706f1bed36d8783"
+      sha256 "4ed9ce71e09f11afc3fc7056b5f5734209dca02b19a557e8654ffd7424023de0"
 
       def install
         bin.install "ecos"
@@ -30,14 +30,14 @@ class Ecos < Formula
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
       url "https://github.com/ecos-labs/ecos/releases/download/v0.2.0/ecos-linux-amd64.tar.gz"
-      sha256 "8ffbf19cde1740488afd6949f67426cc8dc39b98badba253eeb0b0a0b29cb47b"
+      sha256 "0321fcf37f034660a65653b6fa9e6c77ee07fb138c70b4aa6f474428ddbbda21"
       def install
         bin.install "ecos"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
       url "https://github.com/ecos-labs/ecos/releases/download/v0.2.0/ecos-linux-arm64.tar.gz"
-      sha256 "69b1e7dfa5dca6da429cb97f2abc25aac8c70560771b33379d90063be8fcd85a"
+      sha256 "53cc055cd9e29133101d0052ac7f3386e640c62d8a79216bc734d6b6154cf490"
       def install
         bin.install "ecos"
       end
